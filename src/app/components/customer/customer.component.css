@@ -1,0 +1,20 @@
+.scroll-container {
+    max-height: 500px; /* Điều chỉnh chiều cao theo nhu cầu */
+    overflow-y: auto;  /* Kích hoạt cuộn dọc */
+    padding: 15px;     /* Thêm khoảng cách bên trong nếu cần */
+  }
+
+   :host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  } 
+  
+  app-content {
+    flex: 1;
+    padding-bottom: 60px; /* Đảm bảo không bị footer che */
+  }
+
+  .navbar{
+    position: sticky;
+  }

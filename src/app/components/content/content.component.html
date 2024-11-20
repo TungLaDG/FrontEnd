@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <div class="scroll-container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of products$ | async">
+        <div class="card">
+          <img [src]="'assets/images/' + item.imageURL" class="card-img-top img-fluid custom-img" alt="{{ item.productName }}">
+          <p class="card-text">{{ item.productName }}</p>
+          <p class="card-text">{{ item.price }}$</p>
+          <a href="#" class="btn btn-primary">Thông tin chi tiết</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

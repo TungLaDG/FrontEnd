@@ -1,0 +1,60 @@
+/* navbar.css */
+
+/* Định nghĩa CSS cho navbar */
+.navbar {
+    /* position: sticky;   */
+    top: 0;            /* Đặt vị trí tại đầu trang */
+    z-index: 1000;     /* Đảm bảo navbar nằm trên các phần tử khác */
+    transition: background-color 0.3s;  /* Hiệu ứng chuyển đổi cho màu nền */
+    width: 100%; /* Đảm bảo navbar chiếm toàn bộ chiều rộng */
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Màu nền khi cuộn */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 30px;
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+span {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #04764e;
+    font-family: "Nunito", sans-serif;
+    margin-top: 3px;
+}
+
+li:hover {
+    background-color: rgb(91, 97, 99);
+    border-radius: 5px;
+}
+
+a {
+    color: rgb(44, 209, 165) !important;
+    font-family: "Nunito", sans-serif;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+.form-inline.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.form-inline .form-control {
+    flex-grow: 1; /* Để input có thể chiếm nhiều không gian hơn */
+    max-width: 220px; /* Giới hạn chiều rộng của input nếu cần */
+}
+.form-inline .btn {
+    margin-left: 2px; /* Khoảng cách nhỏ giữa input và nút */
+}
+/* .btn-outline-success{
+    height: 40px;
+} */

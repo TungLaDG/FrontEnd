@@ -1,0 +1,62 @@
+<div class="sidebar">
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="inventoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-archive"></i> Hàng hóa kho
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="inventoryDropdown">
+          <li><a class="dropdown-item" href="/admin/inventory">Kiểm tra kho</a></li>
+          <li><a class="dropdown-item" href="/admin/stock-check">Cập nhật kho</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="product" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-clock-history"></i> Hàng hóa
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="product">
+          <li><a class="dropdown-item" href="/admin/history">Xem hàng hóa</a></li>
+          <li><a class="dropdown-item" href="/admin/add-cost">Thêm hàng hóa mới</a></li>
+        </ul>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="user" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-clock-history"></i> Người dùng
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="product">
+          <li><a class="dropdown-item" href="/admin/history">Kiểm tra người dùng</a></li>
+          <li><a class="dropdown-item" href="/admin/add-cost">Thêm người dùng mới</a></li>
+        </ul>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/admin">
+        <i class="bi bi-currency-dollar"></i> Hóa đơn
+      </a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="productCostHistoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-clock-history"></i> Lịch sử giá bán
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="productCostHistoryDropdown">
+        <li><a class="dropdown-item" href="/admin/history">View History</a></li>
+        <li><a class="dropdown-item" href="/admin/add-cost">Add Cost</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="inventoryTransactionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-arrow-left-right"></i> Quản lý giao dịch
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="inventoryTransactionDropdown">
+        <li><a class="dropdown-item" href="/admin/transactions">Transaction List</a></li>
+        <li><a class="dropdown-item" href="/admin/new-transaction">New Transaction</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="onLogout()" style="cursor: pointer;">
+        <i class="bi bi-currency-dollar"></i> Thoát
+      </a>
+    </li>    
+  </ul>
+</div>
